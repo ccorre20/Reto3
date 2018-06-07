@@ -1,0 +1,12 @@
+data/
+data_2/
+distilled_images/
+images/
+raw_data/
+scripts/*.pkl
+/*.pkl
+/*.csv
+dask-worker-space/
+.idea/
+scripts/
+/test.py
