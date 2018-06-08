@@ -1,5 +1,7 @@
-This repository contains both the software and the documentation for a the third and final challenge, as given by the
-Reto No.3 PDF.
+The project contained within this folder is made up of a series of scripts for constructing clustering and classification models
+for use in a web application for detecting the correspondence between images and several locations.
+
+The other part of this project can be found at: https://github.com/ccorre20/web
 
 Within this folder you will find:
 .gitignore: Removes all the data from the repository so it can be transferred to github.
