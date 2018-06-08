@@ -3,9 +3,13 @@ Reto No.3 PDF.
 
 Within this folder you will find:
 .gitignore: Removes all the data from the repository so it can be transferred to github.
+
 SIFT_Extract.py: This will take a collection of images and construct a series of csv files with their corresponding SIFT feature descriptors vertically stacked.
+
 KMeans.py: Constructs a model that classifies what cluster each of the extracted features belongs to.
+
 Classifer.py: This constructs a classification model, designed to allow to detect what location each image corresponds to. It also constructs the histograms it uses to train the model.
+
 location-recognition-software.pdf: This is perhaps the most important document, this describes how the entireity of the system functions.
 
 Execution:
