@@ -23,9 +23,10 @@ X = []
 y = []
 
 # This loads the Kmeans model, so each feature that is loaded, can be classified.
-model = joblib.load('new_KMeans.pkl')
-model.set_params(verbose=False)
 k = 500
+model = joblib.load('new_KMeans_'+str(k)+'.pkl')
+model.set_params(verbose=False)
+
 
 # This goes through all of the folders with the data path, where all the .csv files are.
 for path in os.listdir(data_folder):
@@ -56,4 +57,4 @@ clf = svm.LinearSVC(verbose=True)
 clf.fit(X, y)
 
 # Export the completed model for use in the web application.
-joblib.dump(clf, 'new_LinearSVC.pkl')
+joblib.dump(clf, 'new_LinearSVC_'+str(k)+'.pkl')

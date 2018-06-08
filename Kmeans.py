@@ -18,6 +18,10 @@ data_path = 'data'
 # Number of clusters, thus representing the number of visual words that are of interest.
 k = 500
 
+model_name = 'new_KMeans_'+str(k)+'.pkl'
+
+print(model_name)
+
 # Use dask to lazily load all the data at once, and thus avoid overloading the memory.
 df = dd.read_csv(data_path + '/*/*.csv')
 
@@ -27,7 +31,7 @@ model.fit(df.values)
 
 # Export the trained model, so it can be used in a later stage.
 print("exporting")
-joblib.dump(model, "new_KMeans.pkl")
+joblib.dump(model, model_name)
 print("done")
 
 
