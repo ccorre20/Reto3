@@ -52,9 +52,12 @@ for path in os.listdir(data_folder):
                 # Add the correspoding label for the location.
                 y.append(data_labels[path])
 
+print('Fitting Model')
 # Create and train a classifier, utilizing the histograms as the feature vectors.
 clf = svm.LinearSVC(verbose=True)
 clf.fit(X, y)
 
+print('Exporting Model')
 # Export the completed model for use in the web application.
 joblib.dump(clf, 'new_LinearSVC_'+str(k)+'.pkl')
+print('Done')
